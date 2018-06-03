@@ -19,5 +19,9 @@
   "devDependencies": {
     "@types/jasminewd2": "^2.0.3",
     "ts-node": "^6.1.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/wlsf82/protractor-typescript"
   }
 }

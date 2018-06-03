@@ -9,7 +9,7 @@ describe("protractor with typescript typings", () => {
         expect(greeting.getText()).toEqual("Hello Julie!");
     });
 
-    it("should list todos", function() {
+    it("should list todos", () => {
         let todoList = element.all(by.repeater("todo in todoList.todos"));
         expect(todoList.count()).toEqual(2);
         expect(todoList.get(1).getText()).toEqual("build an AngularJS app");

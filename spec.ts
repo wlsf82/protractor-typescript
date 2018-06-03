@@ -14,4 +14,22 @@ describe("protractor with typescript typings", () => {
         expect(todoList.count()).toEqual(2);
         expect(todoList.get(1).getText()).toEqual("build an AngularJS app");
     });
+
+    it("playing with types", () => {
+        interface Foo {
+            foo: String
+        }
+
+        const bar: Foo = {
+            foo: "foo"
+        }
+
+        // const bar: Foo = {
+        //     bar: "foo"
+        // }
+
+        // const bar: Foo = true;
+
+        console.log(bar);
+    });
 });

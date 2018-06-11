@@ -17,7 +17,7 @@ describe("protractor with typescript typings", () => {
 
     it("playing with types", () => {
         interface Foo {
-            foo: String
+            foo: String;
         }
 
         const bar: Foo = {

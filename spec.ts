@@ -24,10 +24,12 @@ describe("protractor with typescript typings", () => {
             foo: "foo"
         }
 
+        // Not valid
         // const bar: Foo = {
         //     bar: "foo"
         // }
 
+        // Not valid
         // const bar: Foo = true;
 
         console.log(bar);

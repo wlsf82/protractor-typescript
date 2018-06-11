@@ -33,5 +33,33 @@ describe("protractor with typescript typings", () => {
         // const bar: Foo = true;
 
         console.log(bar);
+
+        interface Bar {
+            baz: String;
+            bah?: Number;
+        }
+
+        const baz: Bar = {
+            baz: "Baz"
+        };
+
+        const bzzz: Bar = {
+            baz: "Baz",
+            bah: 1
+        }
+
+        // Not valid
+        // const baz: Bar = {
+        //     baz: "Baz",
+        //     bah: "Bah"
+        // }
+
+        // Not valid
+        // const baz: Bar = {
+        //     bah: 1
+        // }
+
+        console.log(baz);
+        console.log(bzzz);
     });
 });

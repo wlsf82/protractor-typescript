@@ -22,7 +22,7 @@ describe("protractor with typescript typings", () => {
 
         const bar: Foo = {
             foo: "foo"
-        }
+        };
 
         // Not valid
         // const bar: Foo = {
@@ -46,18 +46,18 @@ describe("protractor with typescript typings", () => {
         const bzzz: Bar = {
             baz: "Baz",
             bah: 1
-        }
+        };
 
         // Not valid
         // const baz: Bar = {
         //     baz: "Baz",
         //     bah: "Bah"
-        // }
+        // };
 
         // Not valid
         // const baz: Bar = {
         //     bah: 1
-        // }
+        // };
 
         console.log(baz);
         console.log(bzzz);
